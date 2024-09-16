@@ -1,0 +1,15 @@
+.bg-line2{
+    position: absolute;
+    padding: 15%;
+    bottom: 0;
+    /* bg-gradient-to-r from-[#fcf7f0] to-[#eacd99] */
+    background-image: linear-gradient(to right, #eacd99, #fcf7f0, #eacd99 );
+    background-color: antiquewhite;
+    z-index: -1;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .bg-line2{
+        display: none;
+    }
+}

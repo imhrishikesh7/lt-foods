@@ -1,0 +1,88 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  flex: 1; /* Cards will take up equal space */
+  height: 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: flex 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  filter: brightness(0.7); /* Dim the image by default */
+  width: 100%;
+  height: 100%; /* Ensure the image covers the entire height of the card */
+  object-fit: cover; /* Ensure the image covers the parent div while maintaining its aspect ratio */
+  display: block; /* Removes any extra space below the image */
+  transition: filter 0.3s ease; /* Smooth transition for the filter effect */
+}
+
+.card:hover .card img {
+  filter: brightness(1); /* Restore original brightness on hover */
+}
+
+.card:hover {
+  flex: 3; /* This will expand the hovered card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Shrink other cards slightly when one is hovered */
+.card-container:hover .card:not(:hover) {
+  flex: 0.8; /* Shrinks non-hovered cards */
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover .card-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.values {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.link-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.link-btn:hover {
+  background-color: #0056b3;
+}
