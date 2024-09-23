@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     // State to manage the open/close state for each dropdown
     const [openDropdown, setOpenDropdown] = useState({
@@ -21,9 +21,9 @@ const Navbar = () => {
     return (
         <div className="navbar sticky-top">
             <div className="brand">
-                <a href="/">
+                <Link to="/">
                     <img src="./home/lt foods logo.svg" alt="" />
-                </a>
+                </Link>
             </div>
 
             <input id="hamburger" className="hamburger" type="checkbox" />
@@ -38,56 +38,56 @@ const Navbar = () => {
             <section className="drawer-list">
                 <ul>
                     <li>
-                        <a href="#" onClick={() => handleDropdownToggle('corporate')}>Corporate Overview</a>
+                        <Link to="#" onClick={() => handleDropdownToggle('corporate')}>Corporate Overview</Link>
                         <motion.ul
                             className="dropdown"
                             initial={{ height: 0, opacity: 0 }}
                             animate={openDropdown.corporate ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
                         >
-                            <li><a href="/about">About LT Foods</a></li>
-                            <li><a href="/business-model">Business Model</a></li>
-                            <li><a href="/leadership-message">Leadership Message</a></li>
-                            <li><a href="/key-performance-highlights">Key Performance Highlights</a></li>
-                            <li><a href="/our-offerings">Our Offerings</a></li>
-                            <li><a href="/global-presence">Global Presence</a></li>
-                            <li><a href="/strategy">Strategy</a></li>
-                            <li><a href="/risk-management">Risk Management</a></li>
-                            <li><a href="/materiality">Materiality</a></li>
-                            <li><a href="/stakeholder-engagement">Stakeholder Engagement</a></li>
-                            <li><a href="/ESG-framework-and-scorecard">ESG Framework and Scorecard*</a></li>
-                            <li><a href="/financial-capital">Financial Capital</a></li>
-                            <li><a href="/manufactured-capital">Manufactured Capital</a></li>
-                            <li><a href="/human-capital">Human Capital</a></li>
-                            <li><a href="/intellectual-capital">Intellectual Capital</a></li>
+                            <li><Link to="/about">About LT Foods</Link></li>
+                            <li><Link to="/business-model">Business Model</Link></li>
+                            <li><Link to="/leadership-message">Leadership Message</Link></li>
+                            <li><Link to="/key-performance-highlights">Key Performance Highlights</Link></li>
+                            <li><Link to="/our-offerings">Our Offerings</Link></li>
+                            <li><Link to="/global-presence">Global Presence</Link></li>
+                            <li><Link to="/strategy">Strategy</Link></li>
+                            <li><Link to="/risk-management">Risk Management</Link></li>
+                            <li><Link to="/materiality">Materiality</Link></li>
+                            <li><Link to="/stakeholder-engagement">Stakeholder Engagement</Link></li>
+                            <li><Link to="/ESG-framework-and-scorecard">ESG Framework and Scorecard*</Link></li>
+                            <li><Link to="/financial-capital">Financial Capital</Link></li>
+                            <li><Link to="/manufactured-capital">Manufactured Capital</Link></li>
+                            <li><Link to="/human-capital">Human Capital</Link></li>
+                            <li><Link to="/intellectual-capital">Intellectual Capital</Link></li>
                         </motion.ul>
                     </li>
 
                     <li>
-                        <a href="#" onClick={() => handleDropdownToggle('statutory')}>Statutory Reports</a>
+                        <Link to="#" onClick={() => handleDropdownToggle('statutory')}>Statutory Reports</Link>
                         <motion.ul
                             className="dropdown"
                             initial={{ height: 0, opacity: 0 }}
                             animate={openDropdown.statutory ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
                         >
-                            <li><a href="#">Annual Reports</a></li>
-                            <li><a href="#">Quarterly Reports</a></li>
-                            <li><a href="#">Regulatory Filings</a></li>
+                            <li><Link to="#">Annual Reports</Link></li>
+                            <li><Link to="#">Quarterly Reports</Link></li>
+                            <li><Link to="#">Regulatory Filings</Link></li>
                         </motion.ul>
                     </li>
 
                     <li>
-                        <a href="#" onClick={() => handleDropdownToggle('financial')}>Financial Statements</a>
+                        <Link to="#" onClick={() => handleDropdownToggle('financial')}>Financial Statements</Link>
                         <motion.ul
                             className="dropdown"
                             initial={{ height: 0, opacity: 0 }}
                             animate={openDropdown.financial ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
                         >
-                            <li><a href="#">Balance Sheets</a></li>
-                            <li><a href="#">Income Statements</a></li>
-                            <li><a href="#">Cash Flow Statements</a></li>
+                            <li><Link to="#">Balance Sheets</Link></li>
+                            <li><Link to="#">Income Statements</Link></li>
+                            <li><Link to="#">Cash Flow Statements</Link></li>
                         </motion.ul>
                     </li>
                 </ul>
