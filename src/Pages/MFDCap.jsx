@@ -94,7 +94,7 @@ const MFDCap = () => {
                     </div>
                     <div className='w-fit md:mr-10'>
                         <h1 className='text-[#3777bc]  font-bold text-5xl font-semibold'>80+</h1>
-                        <p className='border-t-[3px] w-fit border-[#3777bc]'>Countries In Which We Are Present</p>
+                        <p className='border-t-[3px] w-fit border- [#3777bc]'>Countries In Which We Are Present</p>
                     </div>
                     <div className='w-fit md:mr-10'>
                         <h1 className='text-[#3777bc]  font-bold text-5xl font-semibold'>1850+</h1>

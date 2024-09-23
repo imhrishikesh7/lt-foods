@@ -16,6 +16,8 @@ import Materiality from './Pages/Materiality'
 import ESGFramework from './Pages/ESGFramework'
 import FinCap from './Pages/FinCap'
 import MFDCap from './Pages/MFDCap'
+import HumanCap from './Pages/HumanCap'
+import IntelCap from './Pages/IntelCap'
 
 function App() {
 
@@ -38,6 +40,8 @@ function App() {
         <Route path='/ESG-framework-and-scorecard' element={<ESGFramework/>}/>
         <Route path='/financial-capital' element={<FinCap/>}/>
         <Route path='/manufactured-capital' element={<MFDCap/>}/>
+        <Route path='/human-capital' element={<HumanCap/>}/>
+        <Route path='/intellectual-capital' element={<IntelCap/>}/>
       </Routes>
       <Footer/>
       </div>

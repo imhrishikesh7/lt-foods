@@ -58,6 +58,8 @@ const Navbar = () => {
                             <li><a href="/ESG-framework-and-scorecard">ESG Framework and Scorecard*</a></li>
                             <li><a href="/financial-capital">Financial Capital</a></li>
                             <li><a href="/manufactured-capital">Manufactured Capital</a></li>
+                            <li><a href="/human-capital">Human Capital</a></li>
+                            <li><a href="/intellectual-capital">Intellectual Capital</a></li>
                         </motion.ul>
                     </li>
 
