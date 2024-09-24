@@ -3,7 +3,7 @@ import './Cta.css'
 
 const Cta = ({ bg, link, col, stroke }) => {
     return (
-        <div className='mt-10 '>
+        <div className=''>
         <a href={link} className="cta" style={{ '--cta-bg-color': bg}}>
             <span style={{ color: col }}>Read More</span>
             <svg width="15px" height="10px" viewBox="0 0 13 10">

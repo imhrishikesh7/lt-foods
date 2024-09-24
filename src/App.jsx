@@ -18,11 +18,16 @@ import FinCap from './Pages/FinCap'
 import MFDCap from './Pages/MFDCap'
 import HumanCap from './Pages/HumanCap'
 import IntelCap from './Pages/IntelCap'
+import SrCap from './Pages/SrCap'
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
+import NatCap from './Pages/NatCap'
+import Bod from './Pages/Bod'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <div>
       <Navbar/>
       <Routes>
@@ -42,6 +47,9 @@ function App() {
         <Route path='/manufactured-capital' element={<MFDCap/>}/>
         <Route path='/human-capital' element={<HumanCap/>}/>
         <Route path='/intellectual-capital' element={<IntelCap/>}/>
+        <Route path='/social-and-relationship-capital' element={<SrCap/>}/>
+        <Route path='/natural-capital' element={<NatCap/>}/>
+        <Route path='/profile-of-board' element={<Bod/>}/>
       </Routes>
       <Footer/>
       </div>

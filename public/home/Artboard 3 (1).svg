@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 59.03 59.03">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="0" width="59.03" height="59.03"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <circle class="cls-3" cx="29.51" cy="29.51" r="28.76"/>
+    <path class="cls-2" d="M42.89,21.41l-6.14,5.7c-.23.23-.35.39-.35.86v15.99c0,.19.16.34.35.34h6.34c.19,0,.35-.15.35-.34v-22.41c0-.19-.15-.53-.55-.14Z"/>
+    <path class="cls-2" d="M22.07,29.11l-6.14,5.61c-.23.22-.35.38-.35.84v8.41c0,.18.16.33.35.33h6.34c.19,0,.35-.15.35-.33v-14.72c0-.19-.15-.53-.55-.14Z"/>
+    <path class="cls-2" d="M32.51,30.07l-2.97,2.88c-.06.05-.14.04-.19,0l-2.69-2.64c-.49-.47-.6-.09-.6.1v13.56c0,.18.15.34.35.34h6.34c.19,0,.35-.15.35-.34v-13.79c0-.19-.15-.53-.59-.11Z"/>
+  </g>
+  <polyline class="cls-2" points="15.59 29.15 23.54 21.86 29.15 25.4 38.47 15.48"/>
+  <polyline class="cls-2" points="34.5 14.72 39.32 14.72 39.32 19.44"/>
+</svg>

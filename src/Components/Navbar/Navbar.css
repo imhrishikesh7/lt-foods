@@ -3,7 +3,6 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -22,14 +21,15 @@ body {
     padding-top: 125px;
     transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
     border-bottom-left-radius: 100vw;
-    background-color: rgb(153, 93, 67, 0.95);
+    /* background-color: rgb(153, 93, 67, 0.95); */
+    background-color: #ecd4ad;
     /* background-color: ; */
     /* background-color: rgba(12, 106, 194, 0.8); */
 }
 
 @media (min-width: 768px) {
     .drawer-list {
-        width: 40vw;
+        width: 30vw;
     }
 }
 
@@ -41,6 +41,10 @@ body {
     overflow: auto;
     overflow-x: hidden;
     pointer-events: auto;
+}
+.nav-link img{
+    width: 12px;
+    display: inline-block;   
 }
 
 .drawer-list li {
@@ -60,26 +64,32 @@ body {
 
 .drawer-list li a {
     text-decoration: none;
-    color: #fefefe;
+    /* color: #fefefe; */
+    color: #71629e;
     /* color: #ebc4cf; */
     text-align: center;
     display: block;
     padding: 1rem;
     font-size: 2em;
+    transition: all 0.3s ease;
     /* font-size: calc(24px - .5vw); */
 }
 .drawer-list .dropdown {
-    background-color: #6e4935;
-    padding-left: 20px;
-    border-left: 2px solid #88c2f8;
+    /* margin: auto; */
+    background-color: #dabf94;
+    /* width: 80%; */
+    /* padding-left: 20px; */
+    border-left: 4px solid #71629e;
     animation: dropdownSlide 300ms ease-in-out;
     margin-top: 0.5rem;
     display: block;
 }
 
 .drawer-list .dropdown li a {
-    font-size: 1em;
-    padding-left: 1rem;
+    color: #6e4935;
+    text-align: left;
+    font-size: 1.2em;
+    padding-left: 2rem;
 }
 @keyframes dropdownSlide {
     0% {
@@ -95,7 +105,7 @@ body {
 
 @media (min-width: 768px) {
     .drawer-list li a {
-        text-align: right;
+        text-align: left;
         padding: 0.5rem;
     }
 }
@@ -103,7 +113,9 @@ body {
 .drawer-list li a:hover {
     cursor: pointer;
     /* background-color: #88c2f8; */
-    background-color: #995d43;
+    background-color: #f0ce93;
+
+    /* background-color: #995d43; */
 }
 
 input.hamburger {
@@ -350,8 +362,15 @@ input.hamburger:checked~label open {
     top: 0;
     width: 100%;
     height: 100px;
-    z-index: 1;
-    background-color: #fef8f0;
+    z-index: 11;
+    background-color: #faf2e4;
+}
+.pdf-download{
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
 }
 .brand{
     width: 170px;
