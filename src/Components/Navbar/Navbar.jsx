@@ -69,6 +69,7 @@ const Navbar = () => {
                             <li><Link to="/social-and-relationship-capital" onClick={closeMenu}>Social and Relationship Capital</Link></li>
                             <li><Link to="/natural-capital" onClick={closeMenu}>Natural Capital</Link></li>
                             <li><Link to="/profile-of-board" onClick={closeMenu}>Profile of Board</Link></li>
+                            <li><Link to="/corporate-information" onClick={closeMenu}>Corporate Information</Link></li>
                         </motion.ul>
                     </li>
 

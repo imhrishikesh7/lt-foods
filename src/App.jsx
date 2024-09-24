@@ -22,6 +22,7 @@ import SrCap from './Pages/SrCap'
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 import NatCap from './Pages/NatCap'
 import Bod from './Pages/Bod'
+import CorporateInfo from './Pages/CorporateInfo'
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
         <Route path='/social-and-relationship-capital' element={<SrCap/>}/>
         <Route path='/natural-capital' element={<NatCap/>}/>
         <Route path='/profile-of-board' element={<Bod/>}/>
+        <Route path='/corporate-information' element={<CorporateInfo/>}/>
       </Routes>
       <Footer/>
       </div>
